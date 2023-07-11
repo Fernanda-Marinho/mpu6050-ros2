@@ -1,0 +1,16 @@
+/home/pi/mpu6050ws/install/mpu/lib/mpu/mpuNode
+/home/pi/mpu6050ws/install/mpu/share/ament_index/resource_index/package_run_dependencies/mpu
+/home/pi/mpu6050ws/install/mpu/share/ament_index/resource_index/parent_prefix_path/mpu
+/home/pi/mpu6050ws/install/mpu/share/mpu/environment/ament_prefix_path.sh
+/home/pi/mpu6050ws/install/mpu/share/mpu/environment/ament_prefix_path.dsv
+/home/pi/mpu6050ws/install/mpu/share/mpu/environment/path.sh
+/home/pi/mpu6050ws/install/mpu/share/mpu/environment/path.dsv
+/home/pi/mpu6050ws/install/mpu/share/mpu/local_setup.bash
+/home/pi/mpu6050ws/install/mpu/share/mpu/local_setup.sh
+/home/pi/mpu6050ws/install/mpu/share/mpu/local_setup.zsh
+/home/pi/mpu6050ws/install/mpu/share/mpu/local_setup.dsv
+/home/pi/mpu6050ws/install/mpu/share/mpu/package.dsv
+/home/pi/mpu6050ws/install/mpu/share/ament_index/resource_index/packages/mpu
+/home/pi/mpu6050ws/install/mpu/share/mpu/cmake/mpuConfig.cmake
+/home/pi/mpu6050ws/install/mpu/share/mpu/cmake/mpuConfig-version.cmake
+/home/pi/mpu6050ws/install/mpu/share/mpu/package.xml

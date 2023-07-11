@@ -1,0 +1,10 @@
+/home/pi/mpu6050ws/build/mpu/CMakeFiles/install/strip.dir
+/home/pi/mpu6050ws/build/mpu/CMakeFiles/install.dir
+/home/pi/mpu6050ws/build/mpu/CMakeFiles/list_install_components.dir
+/home/pi/mpu6050ws/build/mpu/CMakeFiles/mpu_uninstall.dir
+/home/pi/mpu6050ws/build/mpu/CMakeFiles/edit_cache.dir
+/home/pi/mpu6050ws/build/mpu/CMakeFiles/uninstall.dir
+/home/pi/mpu6050ws/build/mpu/CMakeFiles/mpuNode.dir
+/home/pi/mpu6050ws/build/mpu/CMakeFiles/rebuild_cache.dir
+/home/pi/mpu6050ws/build/mpu/CMakeFiles/install/local.dir
+/home/pi/mpu6050ws/build/mpu/CMakeFiles/test.dir
