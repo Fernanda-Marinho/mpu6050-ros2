@@ -19,7 +19,6 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
-find_package(sensor_msgs REQUIRED)
 # uncomment the following section in order to fill in
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
@@ -28,7 +27,7 @@ add_executable(mpuNode src/main.cpp src/MPU6050.cpp)
 target_include_directories(mpuNode PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
   $<INSTALL_INTERFACE:include>)
-ament_target_dependencies(mpuNode rclcpp sensor_msgs)
+ament_target_dependencies(mpuNode rclcpp std_msgs)
 
 target_link_libraries(mpuNode i2c)
 

@@ -1,0 +1,61 @@
+[23.277s] DEBUG:colcon:Command line arguments: ['/home/pi/.local/bin/colcon', 'build']
+[23.280s] DEBUG:colcon:Parsed command line arguments: Namespace(ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='sequential', install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xb5cf4cb0>>, merge_install=False, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xb5cf4cb0>, verb_name='build', verb_parser=CustomArgumentParser(prog='colcon build', usage=None, description='Build a set of packages.', formatter_class=<class 'colcon_core.command.CustomFormatter'>, conflict_handler='error', add_help=True))
+[25.795s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[25.797s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[25.800s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[25.805s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/pi/mpu6050ws'
+[25.810s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[25.816s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[25.820s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[25.825s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[25.827s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[27.154s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[27.156s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[27.159s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[27.162s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[27.164s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[27.169s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[27.175s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[27.177s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[27.183s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[27.188s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[27.190s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[27.195s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[27.200s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[27.203s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[27.207s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[27.212s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[27.215s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[27.219s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[27.221s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[27.227s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[27.229s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[27.232s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[27.235s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[27.237s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[27.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/mpu) by extensions ['ignore', 'ignore_ament_install']
+[27.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/mpu) by extension 'ignore'
+[27.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/mpu) by extension 'ignore_ament_install'
+[27.254s] Level 1:colcon.colcon_core.package_identification:_identify(src/mpu) by extensions ['ros']
+[27.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/mpu) by extension 'ros'
+[27.389s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mpu' with type 'ros.ament_cmake' and name 'mpu'
+[27.392s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[27.395s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[27.397s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[30.579s] Level 5:colcon.colcon_core.verb:set package 'mpu' build argument 'cmake_args' from command line to 'None'
+[30.582s] Level 5:colcon.colcon_core.verb:set package 'mpu' build argument 'cmake_target' from command line to 'None'
+[30.584s] Level 5:colcon.colcon_core.verb:set package 'mpu' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[30.585s] Level 5:colcon.colcon_core.verb:set package 'mpu' build argument 'cmake_clean_cache' from command line to 'False'
+[30.588s] Level 5:colcon.colcon_core.verb:set package 'mpu' build argument 'cmake_clean_first' from command line to 'False'
+[30.590s] Level 5:colcon.colcon_core.verb:set package 'mpu' build argument 'cmake_force_configure' from command line to 'False'
+[30.592s] Level 5:colcon.colcon_core.verb:set package 'mpu' build argument 'ament_cmake_args' from command line to 'None'
+[30.594s] Level 5:colcon.colcon_core.verb:set package 'mpu' build argument 'catkin_cmake_args' from command line to 'None'
+[30.596s] Level 5:colcon.colcon_core.verb:set package 'mpu' build argument 'catkin_skip_building_tests' from command line to 'False'
+[30.598s] DEBUG:colcon.colcon_core.verb:Building package 'mpu' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/pi/mpu6050ws/build/mpu', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/pi/mpu6050ws/install/mpu', 'merge_install': False, 'path': '/home/pi/mpu6050ws/src/mpu', 'symlink_install': False, 'test_result_base': None}
+[30.706s] INFO:colcon.colcon_core.executor:Executing jobs using 'sequential' executor
+[31.158s] DEBUG:colcon.colcon_core.executor.sequential:run_until_complete 'mpu'
+[31.163s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/pi/mpu6050ws/src/mpu' with build type 'ament_cmake'
+[31.172s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/pi/mpu6050ws/src/mpu'
+[31.517s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[31.526s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[33.374s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/pi/mpu6050ws/build/mpu': /usr/bin/cmake --build /home/pi/mpu6050ws/build/mpu -- -j1 -l1

@@ -1,0 +1,126 @@
+[23.444s] DEBUG:colcon:Command line arguments: ['/home/pi/.local/bin/colcon', 'build']
+[23.448s] DEBUG:colcon:Parsed command line arguments: Namespace(ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='sequential', install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xb5c9ef30>>, merge_install=False, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xb5c9ef30>, verb_name='build', verb_parser=CustomArgumentParser(prog='colcon build', usage=None, description='Build a set of packages.', formatter_class=<class 'colcon_core.command.CustomFormatter'>, conflict_handler='error', add_help=True))
+[26.015s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[26.018s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[26.020s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[26.026s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/pi/mpu6050ws'
+[26.031s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[26.037s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[26.041s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[26.046s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[26.050s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[27.316s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[27.319s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[27.323s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[27.327s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[27.330s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[27.337s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[27.343s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[27.347s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[27.354s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[27.361s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[27.365s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[27.371s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[27.377s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[27.381s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[27.386s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[27.392s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[27.396s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[27.402s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[27.405s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[27.412s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[27.415s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[27.419s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[27.423s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[27.426s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[27.436s] Level 1:colcon.colcon_core.package_identification:_identify(src/mpu) by extensions ['ignore', 'ignore_ament_install']
+[27.442s] Level 1:colcon.colcon_core.package_identification:_identify(src/mpu) by extension 'ignore'
+[27.446s] Level 1:colcon.colcon_core.package_identification:_identify(src/mpu) by extension 'ignore_ament_install'
+[27.451s] Level 1:colcon.colcon_core.package_identification:_identify(src/mpu) by extensions ['ros']
+[27.454s] Level 1:colcon.colcon_core.package_identification:_identify(src/mpu) by extension 'ros'
+[27.628s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mpu' with type 'ros.ament_cmake' and name 'mpu'
+[27.632s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[27.636s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[27.639s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[30.647s] Level 5:colcon.colcon_core.verb:set package 'mpu' build argument 'cmake_args' from command line to 'None'
+[30.649s] Level 5:colcon.colcon_core.verb:set package 'mpu' build argument 'cmake_target' from command line to 'None'
+[30.651s] Level 5:colcon.colcon_core.verb:set package 'mpu' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[30.653s] Level 5:colcon.colcon_core.verb:set package 'mpu' build argument 'cmake_clean_cache' from command line to 'False'
+[30.655s] Level 5:colcon.colcon_core.verb:set package 'mpu' build argument 'cmake_clean_first' from command line to 'False'
+[30.657s] Level 5:colcon.colcon_core.verb:set package 'mpu' build argument 'cmake_force_configure' from command line to 'False'
+[30.659s] Level 5:colcon.colcon_core.verb:set package 'mpu' build argument 'ament_cmake_args' from command line to 'None'
+[30.661s] Level 5:colcon.colcon_core.verb:set package 'mpu' build argument 'catkin_cmake_args' from command line to 'None'
+[30.663s] Level 5:colcon.colcon_core.verb:set package 'mpu' build argument 'catkin_skip_building_tests' from command line to 'False'
+[30.666s] DEBUG:colcon.colcon_core.verb:Building package 'mpu' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/pi/mpu6050ws/build/mpu', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/pi/mpu6050ws/install/mpu', 'merge_install': False, 'path': '/home/pi/mpu6050ws/src/mpu', 'symlink_install': False, 'test_result_base': None}
+[30.775s] INFO:colcon.colcon_core.executor:Executing jobs using 'sequential' executor
+[31.229s] DEBUG:colcon.colcon_core.executor.sequential:run_until_complete 'mpu'
+[31.235s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/pi/mpu6050ws/src/mpu' with build type 'ament_cmake'
+[31.246s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/pi/mpu6050ws/src/mpu'
+[31.706s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[31.716s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[34.095s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/pi/mpu6050ws/build/mpu': /usr/bin/cmake --build /home/pi/mpu6050ws/build/mpu -- -j1 -l1
+[175.030s] DEBUG:colcon.colcon_core.executor.sequential:run_until_complete 'mpu' was interrupted
+[175.425s] DEBUG:colcon.colcon_core.executor.sequential:run_until_complete 'mpu' again
+[175.859s] ERROR:colcon.colcon_core.executor.sequential:Task '<Task pending coro=<_fd2callback() running at /home/pi/.local/lib/python3.7/site-packages/colcon_core/subprocess.py:250> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at /usr/lib/python3.7/asyncio/futures.py:348, <TaskWakeupMethWrapper object at 0xb4e2f6b0>()]> cb=[_wait.<locals>._on_completion() at /usr/lib/python3.7/asyncio/tasks.py:440]>' not done
+[175.882s] ERROR:colcon.colcon_core.executor.sequential:Task '<Task pending coro=<Job.__call__() running at /home/pi/.local/lib/python3.7/site-packages/colcon_core/executor/__init__.py:91> wait_for=<Future pending cb=[<TaskWakeupMethWrapper object at 0xb4e2f150>()]>>' not done
+[175.896s] ERROR:colcon.colcon_core.executor.sequential:Task '<Task pending coro=<Process.wait() running at /usr/lib/python3.7/asyncio/subprocess.py:125> wait_for=<Future pending cb=[<TaskWakeupMethWrapper object at 0xb4e12a90>()]> cb=[_wait.<locals>._on_completion() at /usr/lib/python3.7/asyncio/tasks.py:440]>' not done
+[175.905s] ERROR:colcon.colcon_core.executor.sequential:Task '<Task pending coro=<_wait_and_close_fds() running at /home/pi/.local/lib/python3.7/site-packages/colcon_core/subprocess.py:283> wait_for=<Future pending cb=[<TaskWakeupMethWrapper object at 0xb4e125d0>()]> cb=[_wait.<locals>._on_completion() at /usr/lib/python3.7/asyncio/tasks.py:440]>' not done
+[175.917s] ERROR:colcon.colcon_core.executor.sequential:Task '<Task pending coro=<_fd2callback() running at /home/pi/.local/lib/python3.7/site-packages/colcon_core/subprocess.py:250> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at /usr/lib/python3.7/asyncio/futures.py:348, <TaskWakeupMethWrapper object at 0xb4e2f4f0>()]> cb=[_wait.<locals>._on_completion() at /usr/lib/python3.7/asyncio/tasks.py:440]>' not done
+[175.925s] DEBUG:colcon.colcon_core.executor.sequential:closing loop
+[176.413s] ERROR:colcon.colcon_core.executor:Exception in executor extension 'sequential': Cannot close a running event loop
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/selectors.py", line 468, in select
+    fd_event_list = self._selector.poll(timeout, max_ev)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/asyncio/base_events.py", line 539, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.7/asyncio/base_events.py", line 1739, in _run_once
+    event_list = self._selector.select(timeout)
+  File "/usr/lib/python3.7/selectors.py", line 468, in select
+    fd_event_list = self._selector.poll(timeout, max_ev)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/pi/.local/lib/python3.7/site-packages/colcon_core/executor/sequential.py", line 48, in execute
+    loop.run_until_complete(future)
+  File "/usr/lib/python3.7/asyncio/base_events.py", line 571, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.7/asyncio/base_events.py", line 543, in run_forever
+    self._stopping = False
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/pi/.local/lib/python3.7/site-packages/colcon_core/executor/sequential.py", line 59, in execute
+    loop.run_until_complete(future)
+  File "/usr/lib/python3.7/asyncio/base_events.py", line 571, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.7/asyncio/base_events.py", line 526, in run_forever
+    raise RuntimeError('This event loop is already running')
+RuntimeError: This event loop is already running
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/pi/.local/lib/python3.7/site-packages/colcon_core/executor/__init__.py", line 332, in execute_jobs
+    rc = func(context.args, jobs, **kwargs)
+  File "/home/pi/.local/lib/python3.7/site-packages/colcon_core/executor/sequential.py", line 98, in execute
+    loop.close()
+  File "/usr/lib/python3.7/asyncio/unix_events.py", line 55, in close
+    super().close()
+  File "/usr/lib/python3.7/asyncio/selector_events.py", line 83, in close
+    raise RuntimeError("Cannot close a running event loop")
+RuntimeError: Cannot close a running event loop
+
+[176.437s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[176.609s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[177.969s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/pi/mpu6050ws/install/local_setup.sh'
+[178.340s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/pi/mpu6050ws/install/_local_setup_util_sh.py'
+[178.515s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/pi/mpu6050ws/install/setup.sh'
