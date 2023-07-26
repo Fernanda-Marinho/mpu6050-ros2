@@ -52,11 +52,11 @@ void MPU6050::getGyroRaw(float *roll, float *pitch, float *yaw) {
 	*yaw = (float)Z; //Yaw on Z axis
 }
 
-void MPU6050::getGyro(float *roll, float *pitch, float *yaw) {
+void MPU6050::getGyro(float *roll, float *pitch, float *yaw, float *off_r, float *off_p, float *off_y) {
 	getGyroRaw(roll, pitch, yaw); //Store raw values into variables
-	*roll = round((*roll - G_OFF_X) * 1000.0 / GYRO_SENS) / 1000.0; //Remove the offset and divide by the gyroscope sensetivity (use 1000 and round() to round the value to three decimal places)
-	*pitch = round((*pitch - G_OFF_Y) * 1000.0 / GYRO_SENS) / 1000.0;
-	*yaw = round((*yaw - G_OFF_Z) * 1000.0 / GYRO_SENS) / 1000.0;
+	*roll = round((*roll - *off_r) * 1000.0 / GYRO_SENS) / 1000.0; //Remove the offset and divide by the gyroscope sensetivity (use 1000 and round() to round the value to three decimal places)
+	*pitch = round((*pitch - *off_p) * 1000.0 / GYRO_SENS) / 1000.0;
+	*yaw = round((*yaw - *off_y) * 1000.0 / GYRO_SENS) / 1000.0;
 }
 
 void MPU6050::getAccelRaw(float *x, float *y, float *z) {
@@ -68,11 +68,11 @@ void MPU6050::getAccelRaw(float *x, float *y, float *z) {
 	*z = (float)Z;
 }
 
-void MPU6050::getAccel(float *x, float *y, float *z) {
+void MPU6050::getAccel(float *x, float *y, float *z, float *off_x, float *off_y, float *off_z) {
 	getAccelRaw(x, y, z); //Store raw values into variables
-	*x = round((*x - A_OFF_X) * 1000.0 / ACCEL_SENS) / 1000.0; //Remove the offset and divide by the accelerometer sensetivity (use 1000 and round() to round the value to three decimal places)
-	*y = round((*y - A_OFF_Y) * 1000.0 / ACCEL_SENS) / 1000.0;
-	*z = round((*z - A_OFF_Z) * 1000.0 / ACCEL_SENS) / 1000.0;
+	*x = round((*x - *off_x) * 1000.0 / ACCEL_SENS) / 1000.0; //Remove the offset and divide by the accelerometer sensetivity (use 1000 and round() to round the value to three decimal places)
+	*y = round((*y - *off_y) * 1000.0 / ACCEL_SENS) / 1000.0;
+	*z = round((*z - *off_z) * 1000.0 / ACCEL_SENS) / 1000.0;
 }
 
 void MPU6050::getOffsets(float *ax_off, float *ay_off, float *az_off, float *gr_off, float *gp_off, float *gy_off) {
@@ -109,11 +109,15 @@ int MPU6050::getAngle(int axis, float *result) {
 }
 
 void MPU6050::_update() { //Main update function - runs continuously
+	if (teste == 0){
+		std::cout << "Calculating the offsets...\n";
+	  	getOffsets(&ax_off, &ay_off, &az_off, &gr_off, &gp_off, &gy_off);
+		teste = 1; 
+	}
 	clock_gettime(CLOCK_REALTIME, &start); //Read current time into start variable
-
 	while (1) { //Loop forever
-		getGyro(&gr, &gp, &gy); //Get the data from the sensors
-		getAccel(&ax, &ay, &az);
+		getGyro(&gr, &gp, &gy, &gr_off, &gp_off, &gy_off); //Get the data from the sensors
+		getAccel(&ax, &ay, &az, &ax_off, &ay_off, &az_off);
 
 		//X (roll) axis
 		_accel_angle[0] = atan2(az, ay) * RAD_T_DEG - 90.0; //Calculate the angle with z and y convert to degrees and subtract 90 degrees to rotate

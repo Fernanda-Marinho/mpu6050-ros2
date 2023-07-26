@@ -12,8 +12,7 @@ public:
     publisher_ = this->create_publisher<std_msgs::msg::Float32>("yaw", 10);
     timer_ = this->create_wall_timer(std::chrono::milliseconds(250),
                                      std::bind(&YawNode::publishYaw, this));
-
-    device_ = std::make_shared<MPU6050>(0x68);
+    device_ = std::make_shared<MPU6050>(0x68);                             
     yaw_ = 0.0;
 
     sleep(1);
@@ -31,7 +30,7 @@ private:
   rclcpp::Publisher<std_msgs::msg::Float32>::SharedPtr publisher_;
   rclcpp::TimerBase::SharedPtr timer_;
   std::shared_ptr<MPU6050> device_;
-  float yaw_;
+  float yaw_; 
 };
 
 int main(int argc, char **argv) {

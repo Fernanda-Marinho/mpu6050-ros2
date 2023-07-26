@@ -97,6 +97,8 @@ class MPU6050 {
 		float _angle[3]; //Store all angles (accel roll, accel pitch, accel yaw, gyro roll, gyro pitch, gyro yaw, comb roll, comb pitch comb yaw)
 
 		float ax, ay, az, gr, gp, gy; //Temporary storage variables used in _update()
+		float ax_off, ay_off, az_off; 
+		float gr_off, gp_off, gy_off; 
 
 		int MPU6050_addr;
 		int f_dev; //Device file
@@ -111,10 +113,11 @@ class MPU6050 {
 		MPU6050(int8_t addr, bool run_update_thread);
 		void getAccelRaw(float *x, float *y, float *z);
 		void getGyroRaw(float *roll, float *pitch, float *yaw);
-		void getAccel(float *x, float *y, float *z);
-		void getGyro(float *roll, float *pitch, float *yaw);
-		void getOffsets(float *ax_off, float *ay_off, float *az_off, float *gr_off, float *gp_off, float *gy_off);
+		void getAccel(float *x, float *y, float *z, float *off_x, float *off_y, float *off_z);
+        void getGyro(float *roll, float *pitch, float *yaw, float *off_r, float *off_p, float *off_y);
+		void getOffsets(float *ax_off, float *ay_off, float *az_off, float *gr_off, float *gp_off, float *gy_off);		
 		int getAngle(int axis, float *result);
+		int teste = 0; 
 		bool calc_yaw;
 };
 
