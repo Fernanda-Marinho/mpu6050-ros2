@@ -112,6 +112,7 @@ void MPU6050::_update() { //Main update function - runs continuously
 	if (teste == 0){
 		std::cout << "Calculating the offsets...\n";
 	  	getOffsets(&ax_off, &ay_off, &az_off, &gr_off, &gp_off, &gy_off);
+		std::cout << "Gyroscope R,P,Y: " << gr_off << "," << gp_off << "," << gy_off << "\nAccelerometer X,Y,Z: " << ax_off << "," << ay_off << "," << az_off << "\n";	
 		teste = 1; 
 	}
 	clock_gettime(CLOCK_REALTIME, &start); //Read current time into start variable
